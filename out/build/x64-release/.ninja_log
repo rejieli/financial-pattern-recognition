@@ -1,0 +1,12 @@
+# ninja log v5
+3	971	7341174634925965	src/CMakeFiles/CMakeProject1.dir/CMakeProject1.cpp.obj	3c6197be17d0ee89
+2	572	7317529971423840	CMakeFiles/KeyMarket.dir/src/CMakeProject1.cpp.obj	2aa39552a32723b0
+971	1191	7341174636374989	src/CMakeProject1.exe	cac76b1865399318
+14	1019	7341171783451393	src/CMakeFiles/CMakeProject1.dir/visuals/chart.cpp.obj	8e8f8091f2211767
+11	954	7323972928502982	src/CMakeFiles/CMakeProject1.dir/io/CsvReader.cpp.obj	aec435d0cf5e5de6
+12	724	7318151801597671	src/CMakeFiles/KeyMarket.dir/CMakeProject1.cpp.obj	f25a0fd0bb84260a
+21	515	7318151799496759	src/CMakeFiles/KeyMarket.dir/visuals/chart.cpp.obj	817870d8b4b13565
+18	1160	7339759419381127	src/CMakeFiles/CMakeProject1.dir/io/csvreader.cpp.obj	934079b0c9b182f3
+4	994	7341171878186275	src/CMakeFiles/CMakeProject1.dir/math/math.cpp.obj	dd012f36133f3851
+46	506	7339759412841864	src/CMakeFiles/CMakeProject1.dir/numerics/stock.cpp.obj	ffdd618b4b33d8ab
+22	915	7341171782399796	src/CMakeFiles/CMakeProject1.dir/patterns/patterns.cpp.obj	5a831e34c8143da0

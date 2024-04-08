@@ -1,0 +1,23 @@
+# ninja log v5
+3	998	7339805251634820	src/CMakeFiles/CMakeProject1.dir/CMakeProject1.cpp.obj	7b85a3fc626b4a3b
+890	1172	7339805625521120	src/CMakeProject1.exe	75b5f64d5853a3f0
+3	890	7339805623763133	src/CMakeFiles/CMakeProject1.dir/visuals/chart.cpp.obj	1769bca8bcaf37ac
+11	1287	7318133649128087	src/CMakeFiles/CMakeProject1.dir/io/CsvReader.cpp.obj	ea5b5c56107e2be7
+38	759	7339760737485619	src/CMakeFiles/CMakeProject1.dir/numerics/stock.cpp.obj	9d1a1ae3ec0afdf4
+4	911	7339764654382891	src/CMakeFiles/CMakeProject1.dir/patterns/patterns.cpp.obj	80e035a1a766095b
+12	1478	7339760744668349	src/CMakeFiles/CMakeProject1.dir/io/csvreader.cpp.obj	d97674fb2c8e6946
+4	870	7339760964679388	src/CMakeFiles/CMakeProject1.dir/math/math.cpp.obj	6d1d2edac085b294
+5	1322	7339914168892291	src/CMakeFiles/CMakeProject1.dir/visuals/chart.cpp.obj	1769bca8bcaf37ac
+1322	1726	7339914171463391	src/CMakeProject1.exe	75b5f64d5853a3f0
+4	933	7339915653691531	src/CMakeFiles/CMakeProject1.dir/visuals/chart.cpp.obj	1769bca8bcaf37ac
+934	1224	7339915655593454	src/CMakeProject1.exe	75b5f64d5853a3f0
+5	912	7339917619657575	src/CMakeFiles/CMakeProject1.dir/visuals/chart.cpp.obj	1769bca8bcaf37ac
+913	1204	7339917621490158	src/CMakeProject1.exe	75b5f64d5853a3f0
+3	930	7339917949191033	src/CMakeFiles/CMakeProject1.dir/visuals/chart.cpp.obj	1769bca8bcaf37ac
+931	1199	7339917950855460	src/CMakeProject1.exe	75b5f64d5853a3f0
+3	911	7339918604242817	src/CMakeFiles/CMakeProject1.dir/visuals/chart.cpp.obj	1769bca8bcaf37ac
+912	1214	7339918606035126	src/CMakeProject1.exe	75b5f64d5853a3f0
+5	956	7339919484566471	src/CMakeFiles/CMakeProject1.dir/visuals/chart.cpp.obj	1769bca8bcaf37ac
+957	1233	7339919486295104	src/CMakeProject1.exe	75b5f64d5853a3f0
+3	910	7339919788080654	src/CMakeFiles/CMakeProject1.dir/visuals/chart.cpp.obj	1769bca8bcaf37ac
+910	1200	7339919789865674	src/CMakeProject1.exe	75b5f64d5853a3f0
