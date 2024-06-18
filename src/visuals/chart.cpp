@@ -38,10 +38,6 @@ namespace chart{
         DrawAscendingChannel(mainChart, daily_chart, algomath::IdentifyKeyPeaksAndTroughs(daily_chart));
         DoubleArray arr = ArrayMath(DoubleArray(daily_chart_arr.closeData.data(), stock::NUM_PERIODS)).movAvg(12);
 
-      /*  for (int i = 0; i < arr.len; i++) {
-            std::cout << arr[i] << "   " << i << std::endl;
-        }*/
-
         //// Output the chart
         c.makeChart("financial_chart.png");
         
@@ -94,12 +90,7 @@ namespace chart{
     void DrawAscendingChannel(XYChart* mainChart, stock::StockMinuteDaily const& daily_chart, std::vector<stock::PeakAndTrough> const& peak_and_trough) {
         std::vector<patterns::AscendingChannel> ascendingChannels = patterns::IdentifyAscendingChannel(daily_chart, peak_and_trough);
         for (int i = 0; i < ascendingChannels.size(); i++) {
-            /*mainChart->addLineLayer(DoubleArray(ascendingChannels.at(i).top_points.price.data(), ascendingChannels.at(i).top_points.price.size()), 0x0000ff)->setXData(DoubleArray(ascendingChannels.at(i).top_points.index.data(), ascendingChannels.at(i).top_points.price.size()));*/
-            //TrendLayer* trendLayer = mainChart->addTrendLayer(DoubleArray(ascendingChannels.at(i).top_points.index.data(), ascendingChannels.at(i).top_points.price.size()), DoubleArray(ascendingChannels.at(i).top_points.price.data(), ascendingChannels.at(i).top_points.price.size()), 0x000000, "Trend Line");
-            //trendLayer->setLineWidth(2); // Set the line 
-
-            //TrendLayer* trendLayer2 = mainChart->addTrendLayer(DoubleArray(ascendingChannels.at(i).bottom_points.index.data(), ascendingChannels.at(i).bottom_points.price.size()), DoubleArray(ascendingChannels.at(i).bottom_points.price.data(), ascendingChannels.at(i).bottom_points.price.size()), 0x000000, "Trend Line");
-            //trendLayer2->setLineWidth(2); // Set the line ;
+           
             uint16_t size = ascendingChannels.at(i).top_points.index.size();
             double start_pos = ascendingChannels.at(i).top_points.index.at(0) - 20;
             double end_pos = ascendingChannels.at(i).top_points.index.at(size-1) + 20;

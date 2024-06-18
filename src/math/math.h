@@ -94,6 +94,12 @@ namespace algomath {
 
     Line LinearRegression(std::vector<double>& time, std::vector<double>& price);
 
+    std::vector<uint16_t> RollingWindowPeakAlgorithm(stock::StockMinuteDaily const& bars, uint16_t order);
+
+    std::vector<uint16_t> DirectionalChangeAlgorithm(stock::StockMinuteDaily const& bars);
+
+    std::vector<uint16_t> PerceptuallyImportantPointsAlgorithm(stock::StockMinuteDaily const& bars);
+
     void AdjustSlope(Line& const reference_line, Line& line_to_adjust, float pivot_x);
 
     inline double LinearPosition(Line& const reference_line, float x) {

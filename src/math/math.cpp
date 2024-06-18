@@ -27,8 +27,6 @@ namespace algomath {
         return false;
     }
 
-
-
     std::vector<LineSegment> IdentifyTrends(stock::StockMinuteDaily const& bars) {
         std::vector<LineSegment> lines;
 

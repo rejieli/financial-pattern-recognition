@@ -90,4 +90,31 @@ namespace patterns {
 		return ascendingChannels;
 	}
 
+	std::vector<DoubleTop>  IdentifyDoubleTop(stock::StockMinuteDaily const& daily_chart, std::vector<stock::PeakAndTrough> const& peak_and_trough) {
+		std::vector<DoubleTop> double_tops{};
+		// general shape: go trend, peak, then trough, then peak around the same level as first peak, then down trend that breaks the neck line.
+		for (uint16_t i = 2; i < peak_and_trough.size(); i++) {
+			if (peak_and_trough.at(i).is_peak  && !peak_and_trough.at(i-1).is_peak && peak_and_trough.at(i - 2).is_peak) { // general shape: peak, trough, peak
+				// validate that peaks are relatively the same
+				uint16_t peak_1_index = peak_and_trough.at(i - 2).index;
+				uint16_t peak_2_index = peak_and_trough.at(i).index;
+				if (algomath::PercentChange(daily_chart.bars.at(peak_1_index).high, daily_chart.bars.at(peak_2_index).high) < 1) {
+					// identify neck-line (parallel with trough's low)
+					if (i > 2 && peak_and_trough.size() > i + 1) { // check if there is another pt after: HERE, peak, trough, peak, HERE
+						// check nexts pt to ensure they are below the neck-line
+						double close_pre = daily_chart.bars.at(peak_and_trough.at(i - 3).index).close;
+						double close_post = daily_chart.bars.at(peak_and_trough.at(i + 1).index).close;
+						double neck_line_val = daily_chart.bars.at(peak_and_trough.at(i - 1).index).low;
+						if (close_pre < neck_line_val && close_post < neck_line_val) {
+							// successfully identified double top.
+							// calculate neck-line
+						}
+					}
+					
+
+				}
+			}
+		}
+	}
+
 }

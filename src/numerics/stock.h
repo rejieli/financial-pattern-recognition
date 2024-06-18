@@ -8,8 +8,8 @@
 
 namespace stock {
 
+    // Minute Chart for Daily
     constexpr uint16_t NUM_PERIODS = 390;
-
 
     struct Bar {
         int period;
